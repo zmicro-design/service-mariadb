@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-  maria:
+  mariadb:
     restart: always
-    image: maria:${SERVICE_MARIADB_VERSION}
+    image: mariadb:${SERVICE_MARIADB_VERSION}
     ports:
       - ${SERVICE_MARIADB_HOST}:${SERVICE_MARIADB_PORT}:3306
     environment:
